@@ -1,6 +1,8 @@
+import { Navbar } from "./components/navbar.component";
+
 const App = () => {
     return (
-        <h1>hey test1</h1>
+        <Navbar />
     )
 }
 
