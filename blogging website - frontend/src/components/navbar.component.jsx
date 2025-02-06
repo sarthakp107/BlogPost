@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../imgs/logo.png'
-import { Link } from "react-router-dom";
+import { Link, Outlet} from "react-router-dom";
 import { FaSearch, FaPen } from "react-icons/fa"; // FontAwesome search icon
 
 
@@ -8,6 +8,7 @@ import { FaSearch, FaPen } from "react-icons/fa"; // FontAwesome search icon
 export const Navbar = () => {
     const [searchBoxVisibility, setSearchBoxVisibility] = useState(false);
     return (
+        <>
         <nav className='navbar'>
             <Link to="/" className='flex-none  w-10'>
                 <img src={logo} className='w-full' />
@@ -39,5 +40,8 @@ export const Navbar = () => {
 
             </div>
         </nav>
+
+        <Outlet/>
+        </>
     )
 }
