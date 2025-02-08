@@ -12,7 +12,7 @@ export const InputBox = ({name , type, id, value, placeholder}) => {
         id={id}
         className='input-box'
         />
-<i className="fi fi-user input-icon"></i> 
+<i className="fi fi-user input-icon text-black"></i> 
 
 
     </div>
